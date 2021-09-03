@@ -1,11 +1,12 @@
 body{
-    background-color:darkslategrey;
-    color:burlywood;
+    background-color:#5C9EAD;
+    color:#326273;
 }
 
 main{
-    background-color:darkcyan;
+    background-color:white;
     padding: 10px 30px 10px 30px;
+    margin: 0px 100px 0px 100px;
     border-radius: 20px;
     font-family: monospace;
     font-size: 20px;
@@ -13,16 +14,17 @@ main{
 }
 
 header{
-    background-color:darkcyan;
-    margin-bottom: 20px;
+    background-color:white;
+    margin: 0px 100px 20px 100px;
     padding: 10px 30px 10px 30px;
     border-radius: 20px;
     text-align: center;
+    font-family: Lobster;
 }
 
 footer{
-    background-color:darkcyan;
-    margin-top: 20px;
+    background-color:white;
+    margin: 20px 100px 0px 100px;
     padding: 10px 30px 10px 30px;
     border-radius: 20px;
 }
@@ -32,19 +34,20 @@ h2{
 }
 
 nav{
-    background-color: darkcyan;
+    background-color: #E39774;
     color: white;
     margin: 20px 0px 20px 0px;
     padding: 10px 10px 10px 10px;
     border-radius: 20px;
     text-align: center;
+    font-family: monospace;
     font-size: 25px;
 }
 
 li{
-    background-color:lightslategray;
+    background-color:#EEEEEE;
     padding: 10px 30px 10px 30px;
-    margin: 5px 0px 5px 0px;
+    margin: 10px 0px 10px 0px;
     border-radius: 20px;
     text-align: left;
 }
@@ -62,8 +65,17 @@ a:hover{
     width: 300px;
     height: 300px;
     object-fit:cover;
-    border-color:burlywood;
+    border-color:#E39774;
     border-style:solid;
     border-width: 15px;
     border-radius: 50%;
+}
+
+p{
+    text-align: center;
+}
+
+figcaption{
+    font-style: italic;
+    font-size: 15px;
 }
