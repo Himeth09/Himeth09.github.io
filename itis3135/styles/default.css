@@ -42,7 +42,7 @@ nav{
     border-radius: 20px;
     text-align: center;
     font-family: monospace;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 li{
@@ -84,4 +84,5 @@ figcaption{
 
 #built-by{
     font-style: italic;
+    font-size: 15px;
 }
