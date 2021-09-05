@@ -35,7 +35,7 @@ h2{
 }
 
 nav{
-    background-color: #E39774;
+    background-color: #FF8E51;
     color: #f0f0f0;
     margin: 20px 0px 20px 0px;
     padding: 10px 10px 10px 10px;
@@ -67,7 +67,7 @@ a:hover{
     width: 300px;
     height: 300px;
     object-fit:cover;
-    border-color:#E39774;
+    border-color:#FF8E51;
     border-style:solid;
     border-width: 15px;
     border-radius: 50%;
