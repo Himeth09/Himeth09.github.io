@@ -10,7 +10,7 @@ main{
     border-radius: 20px;
     font-family: monospace;
     font-size: 20px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 header{
@@ -119,6 +119,22 @@ tbody tr:nth-child(odd) {
     color: #E3E3E3;
 }
 
-text{
-    border-radius: 50%;
+form{
+    text-align: center;
+}
+
+label{
+    font-size: 80%;
+    font-weight: bold;
+}
+
+input{
+    background-color: #5C9EAD;
+    color: #E3E3E3;
+    font-size: 24px;
+    font-family: monospace;
+}
+
+::placeholder{
+    color: #326273;
 }
