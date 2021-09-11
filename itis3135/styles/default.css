@@ -113,3 +113,12 @@ tbody tr:nth-child(odd) {
     vertical-align: top;
     font-weight: bolder;
 }
+
+.button{
+    background-color: #326273;
+    color: #E3E3E3;
+}
+
+text{
+    border-radius: 50%;
+}
