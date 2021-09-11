@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="styles/default.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Lobster">
+        <title>Himeth Jayakody, ITIS 3135, Tables</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Himeth Jayakody >> ITIS 3135</h1>
+            <nav>
+                <a href="introduction.html">Introduction</a> || <a href="contract.html">Contract</a>
+            </nav>
+        </header>
+        
+        
+        
+        <main>
+            <h2>Tables</h2>
+            
+            <h3>My Tabular Data</h3>
+            <ol>
+                <li>
+                    Ashwin Babu ababu@gmail.com 26
+                </li>
+                <li>
+                    Kusal Sam ksam@gmail.com 19
+                </li>
+                <li>
+                    Anakin Skywalker askywalker@gmail.com 15
+                </li>
+                <li>
+                    Ashoka Tano atano@gmail.com 9
+                </li>
+                <li>
+                    Boba Fett bfett@gmail.com 22
+                </li>
+                <li>
+                    Han Solo hsolo@gmail.com 4
+                </li>
+                <li>
+                    Mace Windu mwindu@gmail.com 18
+                </li>
+                <li>
+                    Sheev Palpatine spalpatine@gmail.com 24
+                </li>
+            </ol>
+
+            <h3>Employee Data in Simple Table</h3>
+
+            <table>
+                <thead>
+                    <th id="name">Name</th>
+                    <th id="email">Email</th>
+                    <th id="years" class="right">Years of Service</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th id="name">Ashwin Babu</th>
+                        <th id="email">ababu@gmail.com</th>
+                        <th id="years" class="right">26</th>
+                    </tr>
+                    <tr>
+                        <th id="name">Kusal Sam</th>
+                        <th id="email">ksam@gmail.com</th>
+                        <th id="years" class="right">19</th>
+                    </tr>
+                    <tr>
+                        <th id="name">Anakin Skywalker</th>
+                        <th id="email">askywalker@gmail.com</th>
+                        <th id="years" class="right">15</th>
+                    </tr>
+                    <tr>
+                        <th id="name">Ashoka Tano</th>
+                        <th id="email">atano@gmail.com</th>
+                        <th id="years" class="right">9</th>
+                    </tr>
+                    <tr>
+                        <th id="name">Boba Fett</th>
+                        <th id="email">bfett@gmail.com</th>
+                        <th id="years" class="right">22</th>
+                    </tr>
+                    <tr>
+                        <th id="name">Han Solo</th>
+                        <th id="email">hsolo@gmail.com</th>
+                        <th id="years" class="right">4</th>
+                    </tr>
+                    <tr>
+                        <th id="name">Mace Windu</th>
+                        <th id="email">mwindu@gmail.com</th>
+                        <th id="years" class="right">18</th>
+                    </tr>
+                    <tr>
+                        <th id="name">Sheev Palpatine</th>
+                        <th id="email">spalpatine@gmail.com</th>
+                        <th id="years" class="right">24</th>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Employee Data in Complex Table</h3>
+            <figure>
+                <figcaption>Employee Information</figcaption>
+                <table>
+                    <thead>
+                        <th id="department">Department</th> 
+                        <th id="name">Name</th>
+                        <th id="email">Email</th>
+                        <th id="years" class="right">Years of Service</th>
+                        <th id="salary">Monthly salary</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td headers="department" rowspan="3" class="dept">Sales</td>
+                            <td headers="name">Ashwin Babu</td>
+                            <td headers="email">ababu@gmail.com</td>
+                            <td headers="years" class="right">15</td>
+                            <td headers="salary">$5500</td>
+                        </tr>
+                        <tr>
+                            <td headers="name">Boba Fett</td>
+                            <td headers="email">bfett@gmail.com</td>
+                            <td headers="years" class="right">8</td>
+                            <td headers="salary">$4500</td>
+                        </tr>
+                        <tr>
+                            <td headers="name">Han Solo</td>
+                            <td headers="email">hsolo@gmail.com</td>
+                            <td headers="years" class="right">4</td>
+                            <td headers="salary">$4000</td>
+                        </tr>
+                        <tr>
+                            <td headers="department" rowspan="3" class="dept">Marketing</td>
+                            <td headers="name">Kusal Sam</td>
+                            <td headers="email">ksam@gmail.com</td>
+                            <td headers="years" class="right">14</td>
+                            <td headers="salary">$5000</td>
+                        </tr>
+                        <tr>
+                            <td headers="name">Anakin Skywalker</td>
+                            <td headers="email">askywalker@gmail.com</td>
+                            <td headers="years" class="right">9</td>
+                            <td headers="salary">$4500</td>
+                        </tr>
+                        <tr>
+                            <td headers="name">Sheev Palpatine</td>
+                            <td headers="email">spalpatine@gmail.com</td>
+                            <td headers="years" class="right">13</td>
+                            <td headers="salary">$5000</td>
+                        </tr>
+                        <tr>
+                            <td headers="department" rowspan="2" class="dept">Human Resources</td>
+                            <td headers="name">Ashoka Tano</td>
+                            <td headers="email">atano@gmail.com</td>
+                            <td headers="years" class="right">2</td>
+                            <td headers="salary">$4000</td>
+                        </tr>
+                        <tr>
+                            <td headers="name">Mace Windu</td>
+                            <td headers="email">mwindu@gmail.com</td>
+                            <td headers="years" class="right">5</td>
+                            <td headers="salary">$4500</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="right">Total Years of Service</td>
+                            <td headers="years" class="right">70</td>
+                            <td headers="salary" class="right">$37000</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </figure>
+        </main>
+        
+        <footer>
+            <nav>
+                <a href="https://webpages.uncc.edu/hjayakod/">Charlotte.edu</a>
+                ||
+                <a href="https://github.com/Himeth09">Github</a>
+                ||
+                <a href="https://Himeth09.github.io">Github.io</a>
+                ||
+                <a href="https://Himeth09.github.io/itis3135">ITIS 3135 Github pages</a>
+                ||
+                <a href="https://www.freecodecamp.org/eternal09">freeCodeCamp</a>
+                ||
+                <a href="https://linkedin.com/in/himeth-jayakody">LinkedIn</a>
+                ||
+                <a href="https://instagram.com/himeth_jayakody/">Instagram</a>
+                
+                
+            </nav>
+            <p id="built-by">Page built by HimeHime Industries</p>
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fhjayakod%2Fitis3135%2Fintroduction.html">
+                <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fhjayakod%2Fitis3135%2Fintroduction.html">
+                <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+            </a>
+        </footer>
+    </body>
+</html>
