@@ -92,14 +92,14 @@ figcaption{
 }
 
 table{
-    width: 750px;
+    width: 100%;
     border-collapse: collapse;
-    margin: 20px auto;
+    margin: 50px auto;
 }
 
 th, td{
     border: 1px solid black;
-    padding: .2em 1em .2em .5em;
+    padding: .5em 1.5em .5em 1.5em;
     text-align: left;
     vertical-align: middle;
 }
