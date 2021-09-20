@@ -8,34 +8,63 @@
             }
             header{
                 display: flex;
-                justify-content: space-evenly;
+                flex-direction: column;
+                align-items:center;
+            }
+            footer{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
             h1{
                 color: #A6E1FA;
                 font-family: "Grechen Fuemen";
+                font-size: 3em;
+                margin-bottom: -.5em;
             }
             #logo-small{
                 width: 3em;
                 height: auto;
                 border-radius: 50%;
                 border-style: solid;
-                border-width: .25em;
+                border-width: .15em;
                 border-color: #A6E1FA;
             }
             h2{
                 color: #A6E1FA;
                 font-family: "Grechen Fuemen";
+                font-size: 2em;
+                text-align: center;
             }
             p{
                 color: #A6E1FA;
                 font-family: monospace;
+                font-size: 1.5em;
             }
             .main-body{
                 background-color: #0E6BA8;
                 border-radius: 1em;
-                margin: 1em 1em 1em 1em;
+                margin: 3em 1em 1em 1em;
                 padding: 1em 2em 1em 3em;
                 align-items: center;
+            }
+            ul{
+                list-style-type:armenian;
+                background-color: #A6E1FA;
+                border-radius: 1em;
+                margin: 1em 1em 1em 1em;
+                padding: 1em 2em 1em 3em;
+            }
+            li{
+                color: #0A2472;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                margin-bottom: .5em;
+            }
+            #services{
+                font-size: 1.5em;
+            }
+            #contact{
+                list-style-type: none;
             }
         </style>
         <meta charset="utf-8">
@@ -45,27 +74,50 @@
 
     <body>
         <header>
-            
-            <h1><img name="logo" id="logo-small" src="images/parasitic-jaeger-bird-clipart-library-com.jpg" alt="Company logo">Jaeger Industries</h1>
+            <h1><img name="logo" id="logo-small" src="images/parasitic-jaeger-bird-clipart-library-com.jpg" alt="Company logo"></h1>
+            <h1>Jaeger Industries</h1>
         </header>
         
         <main>
             <div class="main-body">
                 <h2>Brand Page</h2>
             <p>
-                What makes a good website? Design, usability, and responsiveness. For the low low price of only your eternal soul and first born child, our experts at Humble Jaeger industries guarantee our clients a one of a kind webpage*.
-                <p style="font-size: .1em;">*No refunds or take backs of any kind</p>
+                What makes a good website? Design, usability, and responsiveness. For the low low price of only your eternal soul, first born child, and twelve payments of $399.99 with interest, our experts at Humble Jaeger industries guarantee our clients a one of a kind webpage.
             </p>
             
-            <ul>
+            <ul id="services">
                 <li>
-
+                    Modern, visually appealing designs
+                </li>
+                <li>
+                    Responsive pages fit for all kinds of devices
+                </li>
+                <li>
+                    Excellent user experiences
+                </li>
+                <li>
+                    Full fledged e-commerce system
+                </li>
+                <li>
+                    Money back guarantee*
+                    <p style="font-size: .1em; color: #0A2472;">*No refunds or take backs of any kind</p>
                 </li>
             </ul>
 
             <p>
-
+                To immediately improve the image of you or your company, please contact us through one of the following options:
             </p>
+            <ul id="contact">
+                <li>
+                    Email: requests@humblejaeger.com
+                </li>
+                <li>
+                    Phone: (523) 437-2473
+                </li>
+                <li>
+                    Address: 1101 Korriban Avenue, Courascant 4512 || 9am-5pm Mon-Fri
+                </li>
+            </ul>
         </div>
         </main>
         
