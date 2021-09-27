@@ -69,6 +69,13 @@
             #contact{
                 list-style-type: none;
             }
+            .main-body{
+                text-align: center;
+            }
+            button{
+                background-color: #326273;
+                color: #E3E3E3;
+            }
         </style>
         
         <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
@@ -84,12 +91,14 @@
         <main>
             <div class="main-body">
                 <h2>First Scripts</h2>
-                <button onclick="alertFunc()">Click</button>
-                <button onclick="getRefund()">Get Refund</button>
-                <button onclick="montyPython()">Fun Stuff</button>
-                <button onclick="calculateTotal()">Caclulate Total Cost</button>
-                <button onclick="howManyPixels()">How Many Pixels?</button>
-                <button onclick="goodStuff()">Good Stuff</button>
+                <section id="buttonGroup">
+                    <button onclick="alertFunc()">Click</button>
+                    <button onclick="getRefund()">Get Refund</button>
+                    <button onclick="montyPython()">Fun Stuff</button>
+                    <button onclick="calculateTotal()">Caclulate Total Cost</button>
+                    <button onclick="howManyPixels()">How Many Pixels?</button>
+                    <button onclick="goodStuff()">Good Stuff</button>
+                </section>
             </div>
         </main>
         
