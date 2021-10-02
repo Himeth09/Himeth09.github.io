@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <!-- color palette: https://coolors.co/00072d-001c55-0a2472-0e6ba8-a6e1fa -->
+        <!-- Note: Will be moving first_scripts.html to brand folder after receiving grade so that grader doesn't use a broken link -->
+        <script src="/itis3135/scripts/activity_6_polygon_script.js"></script>
         <style>
             body{
                 background-color: #00072D;
@@ -11,6 +13,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items:center;
+                text-align: center;
             }
             footer{
                 display: flex;
@@ -67,68 +70,39 @@
             #contact{
                 list-style-type: none;
             }
+            .main-body{
+                text-align: center;
+            }
+            button{
+                background-color: #326273;
+                color: #E3E3E3;
+            }
         </style>
         
         <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
-        <title>Humble Jeager Industries, ITIS 3135, Introduction</title>
+        <title>Humble Jeager Industries, ITIS 3135, Name the Polygon</title>
     </head>
 
-    <body>
+    <body onload="askUser();">
         <header>
-            <h1><img id="logo" src="images/parasitic-jaeger-bird-clipart-library-com.jpg" alt="Company logo"></h1>
-            <h1>Humble Jaeger Industries</h1>
+            <h1><img id="logo" src="/itis3135/images/parasitic-jaeger-bird-clipart-library-com.jpg" alt="Company logo"></h1>
+            <h1 id="greeting">Humble Jaeger Industries</h1>
         </header>
         
         <main>
             <div class="main-body">
-                <h2>Brand Page</h2>
-                <p>
-                    What makes a good website? Design, usability, and responsiveness. For the low low price of only your eternal soul, first born child, and twelve payments of $399.99 with interest, our experts at Humble Jaeger industries guarantee our clients a one of a kind webpage.
-                </p>
-                
-                <ul id="services">
-                    <li>
-                        Modern, visually appealing designs
-                    </li>
-                    <li>
-                        Responsive pages fit for all kinds of devices
-                    </li>
-                    <li>
-                        Excellent user experiences
-                    </li>
-                    <li>
-                        Full fledged e-commerce system
-                    </li>
-                    <li>
-                        Money back guarantee*
-                        <p style="font-size: .1em; color: #0A2472;">*No refunds or take backs of any kind</p>
-                    </li>
-                </ul>
-
-                <p>
-                    To immediately improve the image of you or your company, please contact us through one of the following options:
-                </p>
-                <ul id="contact">
-                    <li>
-                        Email: requests@humblejaeger.com
-                    </li>
-                    <li>
-                        Phone: (523) 437-2473
-                    </li>
-                    <li>
-                        Address: 1101 Korriban Avenue, Courascant 4512 || 9am-5pm Mon-Fri
-                    </li>
-                </ul>
+                <h2>Name the Polygon</h2>
+  
             </div>
         </main>
         
         <footer>
             <p id="built-by">Page created by Humble Jaeger Industries 2021</p>
-            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fhjayakod%2Fitis3135%2Fbrand_humble_jaeger.html">
-                <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fhjayakod%2Fitis3135%2Fbrand%2Fname_the_polygon.html">
+                <img src="/itis3135/images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
             </a>
-            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fhjayakod%2Fitis3135%2Fbrand_humble_jaeger.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
-                <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fhjayakod%2Fitis3135%2Ffirst_scripts.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+                <img src="/itis3135/images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
             </a>
         </footer>
     </body>
