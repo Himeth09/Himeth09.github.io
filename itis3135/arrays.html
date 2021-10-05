@@ -2,10 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <link href="styles/calculator.css" rel="stylesheet" type="text/css">
+        <link href="styles/default.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lobster">
-        <title>Himeth Jayakody, ITIS 3135, Calculator FCC</title>
+        <title>Himeth Jayakody, ITIS 3135, Arrays</title>
     </head>
 
     <body>
@@ -16,7 +16,7 @@
                 <a href="contract.html">Contract</a> || 
                 <a href="tables.html">Tables</a> || 
                 <a href="forms.html">Forms</a> ||
-                <a href="website_evaluations.html">Website Evaluations</a> ||
+                <a href="website_evaluations.html">Website Evaluations</a>||
                 <a href="calculator_try.html">Calculator Try</a> ||
                 <a href="calculator_fcc.html">Calculator FCC</a> ||
                 <a href="arrays.html">Arrays</a>
@@ -26,31 +26,15 @@
         
         
         <main>
-            <h2>Calculator</h2>
-                <div class="calculator">
-                    <div class="calculator__display">0</div>
-                    <div class="calculator__keys">
-                        <button class="key--operator" data-action="add">+</button>
-                        <button class="key--operator" data-action="subtract">-</button>
-                        <button class="key--operator" data-action="multiply">&times;</button>
-                        <button class="key--operator" data-action="divide">&divide;</button>
-                        <button>7</button>
-                        <button>8</button>
-                        <button>9</button>
-                        <button>4</button>
-                        <button>5</button>
-                        <button>6</button>
-                        <button>1</button>
-                        <button>2</button>
-                        <button>3</button>
-                        <button>0</button>
-                        <button data-action="decimal">.</button>
-                        <button data-action="clear">C</button>
-                        <button class="key--equal" data-action="calculate">=</button>
-                    </div>
-                    
-                </div>
-                <script src="scripts/calculator_fcc.js"></script>
+            <h2>Arrays</h2>
+            <div>
+                <button onclick="addSalary()">Add Salary</button>
+                <button onclick="displayResults()">Display Results</button>
+                <button onclick="displaySalary()">Display Salary</button>
+            </div>
+            <div id="results">
+                
+            </div>
         </main>
         
         <footer>
@@ -72,10 +56,10 @@
                 
             </nav>
             <p id="built-by">Page built by HimeHime Industries</p>
-            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fhjayakod%2Fitis3135%2Fcalculator_fcc.html">
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fhjayakod%2Fitis3135%2Fintroduction.html">
                 <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
             </a>
-            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fhjayakod%2Fitis3135%2Fcalculator_fcc.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fhjayakod%2Fitis3135%2Fintroduction.html">
                 <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
             </a>
         </footer>
