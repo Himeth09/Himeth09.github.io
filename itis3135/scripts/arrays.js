@@ -1,26 +1,30 @@
-const person = ["Ashiwn Babu", "Kusal Sam", "Anakin Skywalker", "Ahsoka Tano", "Boba Fett", "Han Solo"];
-const salaries = [180000.00, 120000.00, 160000.00, 60000.00, 110000.00, 80000.00];
+// const person = ["Ashiwn Babu", "Kusal Sam", "Anakin Skywalker", "Ahsoka Tano", "Boba Fett", "Han Solo"];
+// const salaries = [180000.00, 120000.00, 160000.00, 60000.00, 110000.00, 80000.00];
+
+const person = [];
+const salaries = [];
 
 window.onload = function(){
-    document.getElementById("new-name").focus();
+    document.getElementById("employees").focus();
 }
 
 //Adds an employee and their salary to the existing arrays
 function addSalary(){
-    let newPerson = document.getElementById("new-name").value;
+    let newPerson = document.getElementById("employees").value;
     let newSalary = document.getElementById("new-salary").value;
-    validateInput(newPerson, newSalary);
+    validateSalary(newPerson, newSalary);
 }
 //Checks to make sure inputs are valid
-function validateInput(name, money){
-    if(name.length <1 || isNaN(parseFloat(money)) || parseFloat(money)<0){
-        alert("Please enter a valid input for the employee name and salary");
-        document.getElementById("new-name").focus();
+function validateSalary(name, money){
+    if(isNaN(parseFloat(money)) || parseFloat(money)<0){
+        alert("Please enter a valid input for the employee salary");
+        document.getElementById("employees").focus();
     }else{
         person.push(name);
         salaries.push(parseFloat(money));
         alert(`Employee ${name} added successfully with a salary of $${money}!`);
-        document.getElementById("new-name").focus();
+        document.getElementById("new-salary").value="";
+        document.getElementById("employees").focus();
     }
 }
 
