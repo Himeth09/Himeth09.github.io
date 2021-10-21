@@ -5,29 +5,28 @@ body{
 
 main{
     background-color:#f0f0f0;
-    padding: 10px 30px 10px 30px;
-    margin: 0px 100px 0px 100px;
-    border-radius: 20px;
+    padding: 1em 3em;
+    margin: 0em 5em;
+    font-size: 1.5em;
+    border-radius: 3em;
     font-family: monospace;
-    font-size: 20px;
     overflow: hidden;
-    /* text-align: center; */
 }
 
 header{
     background-color:#f0f0f0;
-    margin: 20px 100px 20px 100px;
-    padding: 10px 30px 10px 30px;
-    border-radius: 20px;
+    margin: 2em 6em;
+    padding: 1em 3em;
+    border-radius: 2em;
     text-align: center;
     font-family: Lobster;
 }
 
 footer{
     background-color:#f0f0f0;
-    margin: 20px 100px 20px 100px;
-    padding: 10px 30px 10px 30px;
-    border-radius: 20px;
+    margin: 2em 6em;
+    padding: 1em 3em;
+    border-radius: 2em;
     text-align: center;
 }
 
@@ -38,9 +37,9 @@ h2{
 nav{
     background-color: #326273;
     color: #f0f0f0;
-    margin: 20px 0px 20px 0px;
-    padding: 10px 10px 10px 10px;
-    border-radius: 20px;
+    margin: 2em 0em;
+    padding: 1em;
+    border-radius: 2em;
     text-align: center;
     font-family: monospace;
     font-size: 20px;
@@ -49,10 +48,9 @@ nav{
 ul{
     background-color:#E3E3E3;
     padding: .5em .3em .5em .3em;
-    /*margin: 10px 30px 10px 0px; */
     display: flex;
     flex-direction: row;
-    border-radius: 20px;
+    border-radius: 2em;
     align-items: center;
     justify-content: center;
 }
