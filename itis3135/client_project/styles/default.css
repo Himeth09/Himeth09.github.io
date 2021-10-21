@@ -1,0 +1,162 @@
+body{
+    background-color:#5C9EAD;
+    color:#326273;
+}
+
+main{
+    background-color:#f0f0f0;
+    padding: 10px 30px 10px 30px;
+    margin: 0px 100px 0px 100px;
+    max-width: 2000px;
+    overflow: hidden;
+    border-radius: 20px;
+    font-family: monospace;
+    font-size: 20px;
+    /* text-align: center; */
+}
+
+header{
+    background-color:#f0f0f0;
+    margin: 20px 100px 20px 100px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: Lobster;
+}
+
+footer{
+    background-color:#f0f0f0;
+    margin: 20px 100px 20px 100px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+nav{
+    background-color: #326273;
+    color: #f0f0f0;
+    margin: 20px 0px 20px 0px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+ul{
+    background-color:#E3E3E3;
+    padding: 10px 30px 10px 50px;
+    margin: 10px 30px 10px 0px;
+    border-radius: 20px;
+}
+
+.page-design{
+    background-color:#E3E3E3;
+    padding: 10px 30px 10px 50px;
+    margin: 10px 30px 10px 0px;
+    border-radius: 20px;
+}
+
+li{
+    padding: 10px 30px 10px 30px;
+    text-align: left;
+}
+
+#wireframe, #site-map{
+    width: 50em;
+    height: auto;
+}
+
+a{
+    color: #f0f0f0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration:double;
+}
+
+#portrait-photo{
+    width: 300px;
+    height: 300px;
+    object-fit:cover;
+    border-color:#326273;
+    border-style:solid;
+    border-width: 15px;
+    border-radius: 50%;
+}
+
+#portrait{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+figcaption{
+    font-style: italic;
+    font-size: 15px;
+}
+
+#built-by{
+    font-style: italic;
+    font-size: 15px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 50px auto;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: .5em 1.5em .5em 1.5em;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.right{
+    text-align: right;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #5C9EAD;
+    color: #E3E3E3;
+}
+
+.dept{
+    vertical-align: top;
+    font-weight: bolder;
+}
+
+.button{
+    background-color: #326273;
+    color: #E3E3E3;
+}
+
+form{
+    text-align: center;
+}
+
+label{
+    font-size: 80%;
+    font-weight: bold;
+}
+
+input{
+    background-color: #5C9EAD;
+    color: #E3E3E3;
+    font-size: 24px;
+    font-family: monospace;
+}
+
+::placeholder{
+    color: #326273;
+}
