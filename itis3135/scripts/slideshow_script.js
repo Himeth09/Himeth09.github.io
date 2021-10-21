@@ -1,9 +1,9 @@
 $(function(){
     //preload images
-    // $('#image-list div').each(function(){
-    //     let swappedImage = new Image();
-    //     swappedImage.src = $(this).children().attr('src');
-    // });
+    $('#image-list div').each(function(){
+        let swappedImage = new Image();
+        swappedImage.src = $(this).children().attr('src');
+    });
 
     //set up event handlers for links
     $('#image-list div').click(function(evt){
