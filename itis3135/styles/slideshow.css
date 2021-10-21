@@ -10,6 +10,7 @@ main{
     border-radius: 20px;
     font-family: monospace;
     font-size: 20px;
+    overflow: hidden;
     /* text-align: center; */
 }
 
