@@ -1,24 +1,23 @@
-$(document).ready(function(){
+$(function(){
     //preload images
-    $('#image-list a').each(function(){
+    $('#image-list div').each(function(){
         let swappedImage = new Image();
-        swappedImage.src = $(this).attr('href');
+        swappedImage.src = $(this).children().attr('src');
     });
 
     //set up event handlers for links
-    $('#image-list a').click(function(evt){
+    $('#image-list div').click(function(evt){
         //swap image
-        let imageURL = $(this).attr('href');
+        let imageURL = $(this).children().attr('src');
+        //$('#main-image').fadeOut('slow');
         $('#main-image').attr('src', imageURL);
+        //$('#main-image').fadeIn('slow');
 
         //swap caption
-        let imageCaption = $(this).attr('title');
+        let imageCaption = $(this).children().attr('alt');
         $('#caption').text(imageCaption);
 
         //cancle default action
         evt.preventDefault();
     });
-
-    $('li:first-child a').focus();
 });
-
