@@ -60,7 +60,7 @@ $(function(){
 
             //change main image to the next image in the array
             $('#main-image').attr('src', pictures[index].source); 
-            console.log(`switched index @ ${index}`);
+            console.log(`switched index @ ${index}, source = ${pictures[index].source}`);
             //change caption to the next caption in the array
             $('#caption').text(pictures[index].caption);
             
