@@ -63,9 +63,12 @@ $(function(){
     
             //change caption to the next caption in the array
             $('#caption').text(pictures[index].caption);
-
-            $('#main-image').fadeTo(1000, 1, function(){
-            });
+            setTimeout(function(){
+                $('#main-image').fadeTo(1000, 1, function(){
+                });
+            }, 500);
+        
+            
         });
         
         //increments index to go to the next image
