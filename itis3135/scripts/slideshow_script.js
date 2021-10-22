@@ -63,12 +63,12 @@ $(function(){
             console.log(`switched index @ ${index}, source = ${pictures[index].source}`);
             //change caption to the next caption in the array
             $('#caption').text(pictures[index].caption);
-            
-            $('#main-image').fadeTo(2000, 1, function(){
-                console.log('fadeIn');
-            });
         });
         
+        $('#main-image').fadeTo(2000, 1, function(){
+            console.log('fadeIn');
+        });
+
         //increments index to go to the next image
         index++;
     }, 7000); //Uses an interval so that each image stays for 6.5s
