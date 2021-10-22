@@ -44,33 +44,44 @@ $(function(){
     
     //automatically cylce through the different images
     setInterval(function(){
-
+        
         /* *
          * needed a way to get the image to fade in and out
          * when I tried doing it with .fadeIn/.fadeOut, the image would switch first and then fade
          * found a solution here:
          * https://stackoverflow.com/questions/5979418/jquery-change-image-src-with-fade-effect/16714137#16714137
         */
-        $('#main-image').fadeTo(1500, 0, function(){
-            if(index===5){
+        // $('#main-image').fadeTo(1500, 0, function(){
+        //     if(index===5){
 
-                //sets index to 0 to so that it starts at the first image
-                index=0;
-            }
+        //         //sets index to 0 to so that it starts at the first image
+        //         index=0;
+        //     }
 
-            //change main image to the next image in the array
-            $('#main-image').attr('src', pictures[index].source); 
+        //     //change main image to the next image in the array
+        //     $('#main-image').attr('src', pictures[index].source); 
     
-            //change caption to the next caption in the array
-            $('#caption').text(pictures[index].caption);
-            setTimeout(function(){
-                $('#main-image').fadeTo(1000, 1, function(){
-                });
-            }, 500);
-        
+        //     //change caption to the next caption in the array
+        //     $('#caption').text(pictures[index].caption);
             
-        });
+        //     $('#main-image').fadeTo(1000, 1, function(){
+        //     });
+        // });
         
+        if(index===5){
+
+            //sets index to 0 to so that it starts at the first image
+            index=0;
+        }
+        
+        $('#main-image').fadeOut(1000);
+        //change main image to the next image in the array
+        $('#main-image').attr('src', pictures[index].source); 
+    
+        //change caption to the next caption in the array
+        $('#caption').text(pictures[index].caption);
+        
+        $('#main-image').fadeIn(1000);
         //increments index to go to the next image
         index++;
     }, 7000); //Uses an interval so that each image stays for 6.5s
