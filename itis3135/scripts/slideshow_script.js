@@ -39,6 +39,12 @@ $(function(){
     });
 });
 
+$(function(){
+    for (let i = 0; i < pictures.length; i++) {
+        let tempImage = new Image();
+        tempImage.src = pictures[i].source;
+    }
+});
 
 $(function(){   
     
