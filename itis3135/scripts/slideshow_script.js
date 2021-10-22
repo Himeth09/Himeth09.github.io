@@ -60,11 +60,12 @@ $(function(){
 
             //change main image to the next image in the array
             $('#main-image').attr('src', pictures[index].source); 
-    
+            console.log(`switched index @ ${index}`);
             //change caption to the next caption in the array
             $('#caption').text(pictures[index].caption);
             
             $('#main-image').fadeTo(2000, 1, function(){
+                console.log('fadeIn');
             });
         });
         
