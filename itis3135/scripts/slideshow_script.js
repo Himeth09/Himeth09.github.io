@@ -4,7 +4,9 @@ const pictures = [
     {"source":"images/pineapple_fountain.jpg", "caption":"Pineapple Fountain @ Charleston, SC"},
     {"source":"images/jojo.jpg", "caption":"NC State Fair 2019"},
     {"source":"images/shivvy.jpg", "caption":"BabuQ with friends"},
-    {"source":"images/dorothea_dix.jpg", "caption":"Dorothea Dix Park, June 2021"}
+    {"source":"images/dorothea_dix.jpg", "caption":"Dorothea Dix Park, June 2021"},
+    {"source":"images/wild_hime_hime.jpg", "caption":"A Himeth in the wild"},
+    {"source":"images/harvard.jpg", "caption":"Harvard University 2018"}
 ];
 
 let index = 1; 
@@ -51,21 +53,21 @@ $(function(){
     //automatically cylce through the different images
     setInterval(function(){
 
-        //if the index is equal to 5, it needs to be changed as there is no 5th index in the pictures array
-        if(index===5){
+        //if the index is equal to 7, it needs to be changed as there is no 7th index in the pictures array
+        if(index===7){
 
             //sets index to 0 to so that it starts at the first image
             index=0;
         }
-        
+
         //change main image to the next image in the array
         $('#main-image').attr('src', pictures[index].source); 
-        
+
         //change caption to the next caption in the array
         $('#caption').text(pictures[index].caption);
 
         //increments index to go to the next image
         index++;
-    }, 6000); //Uses an interval so that each image stays for 6.5s
+    }, 6000); //Uses an interval so that each image stays for 6s
    
 })
