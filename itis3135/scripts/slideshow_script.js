@@ -51,44 +51,21 @@ $(function(){
     //automatically cylce through the different images
     setInterval(function(){
 
-        /* *
-         * needed a way to get the image to fade in and out
-         * when I tried doing it with .fadeIn/.fadeOut, the image would switch first and then fade
-         * found a solution here:
-         * https://stackoverflow.com/questions/5979418/jquery-change-image-src-with-fade-effect/16714137#16714137
-        */
-        // $('#main-image').fadeTo(1500, 0, function(){
-        //     if(index===5){
-
-        //         //sets index to 0 to so that it starts at the first image
-        //         index=0;
-        //     }
-
-        //     //change main image to the next image in the array
-        //     $('#main-image').attr('src', pictures[index].source); 
-        //     console.log(`switched index @ ${index}, source = ${pictures[index].source}`);
-        //     //change caption to the next caption in the array
-        //     $('#caption').text(pictures[index].caption);
-        // });
-        
-        // $('#main-image').fadeTo(2000, 1, function(){
-        //     console.log('fadeIn');
-        // });
-
+        //if the index is equal to 5, it needs to be changed as there is no 5th index in the pictures array
         if(index===5){
 
             //sets index to 0 to so that it starts at the first image
             index=0;
         }
         
-
         //change main image to the next image in the array
         $('#main-image').attr('src', pictures[index].source); 
+        
         //change caption to the next caption in the array
         $('#caption').text(pictures[index].caption);
 
         //increments index to go to the next image
         index++;
-    }, 7000); //Uses an interval so that each image stays for 6.5s
+    }, 6000); //Uses an interval so that each image stays for 6.5s
    
 })
