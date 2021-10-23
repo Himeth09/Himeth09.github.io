@@ -59,7 +59,7 @@ $(function(){
             //sets index to 0 to so that it starts at the first image
             index=0;
         }
-
+        
         //change main image to the next image in the array
         $('#main-image').attr('src', pictures[index].source); 
 
