@@ -13,6 +13,9 @@ $(function(){
 
         $(this).animate({"width": "50px",}, 1000);
         $('li:even').addClass('alert');
+        $('#not-child').animate({
+            fontSize: "250%", right: "+=200"
+        }, 1000);
         //$('li>a').removeClass(); li>a gets only anchor tags that are direct children of an li element
     });
 });
