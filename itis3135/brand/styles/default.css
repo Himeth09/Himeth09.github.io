@@ -1,42 +1,55 @@
 body{
     background-color: #00072D;
 }
+
 header{
     display: flex;
     flex-direction: column;
     align-items:center;
     text-align: center;
 }
+
 footer{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 h1{
     color: #A6E1FA;
     font-family: "Grechen Fuemen";
     font-size: 3em;
     margin-bottom: -.5em;
 }
+
+a {
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 0 10px;
+}
+
 #logo{
-    width: 3em;
+    width: 120px;
     height: auto;
     border-radius: 50%;
     border-style: solid;
-    border-width: .15em;
+    border-width: 5px;
     border-color: #A6E1FA;
 }
+
 h2{
     color: #A6E1FA;
     font-family: "Grechen Fuemen";
     font-size: 2em;
     text-align: center;
 }
+
 p{
     color: #A6E1FA;
     font-family: monospace;
     font-size: 1.5em;
 }
+
 .main-body{
     background-color: #0E6BA8;
     border-radius: 1em;
@@ -44,6 +57,7 @@ p{
     padding: 1em 2em 1em 3em;
     align-items: center;
 }
+
 ul{
     list-style-type:armenian;
     background-color: #A6E1FA;
@@ -51,14 +65,37 @@ ul{
     margin: 1em 1em 1em 1em;
     padding: 1em 2em 1em 3em;
 }
+
 li{
     color: #0A2472;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: .5em;
 }
+
 #services{
     font-size: 1.5em;
 }
+
 #contact{
     list-style-type: none;
 }
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #0E6BA8;
+    height: 200px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #A6E1FA;
+    height: 50px;
+}
+
