@@ -7,7 +7,7 @@
         <script src="lib/w3.js"></script>
         <title>Humble Jeager Industries, ITIS 3135, Services</title>
     </head>
-    
+
     <body>
         <div class="header" w3-include-html="components/header.html"></div>
         <div class="navigation" w3-include-html="components/nav.html"></div>
@@ -17,7 +17,7 @@
                 <h2>Services Page</h2>
                 <p>We make websites, that's it.</p>
                 
-                <ul id="services">
+                <ul id="services-list">
                     <li>
                         Modern, visually appealing designs
                     </li>
@@ -35,6 +35,11 @@
                         <p style="font-size: .1em; color: #0A2472;">*No refunds or take backs of any kind</p>
                     </li>
                 </ul>
+
+                <div id="validation-group">
+                    <button class="validate" onclick="validateHTML('services')">Validate HTML</button>
+                    <button class="validate" onclick="validateCSS('services')">Validate CSS</button>
+                </div>
             </div>
         </main>
 
