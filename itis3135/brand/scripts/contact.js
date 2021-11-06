@@ -21,8 +21,15 @@ function display() {
         formFactor="Mobile";
     }
 
-    window.alert(`Name: ${fName} ${lName}\nEmail: ${email}\n${privacyChecked}\n${offersChecked}\nForm Factor: ${formFactor}`);
+    window.alert(`Name: ${fName} ${lName}\nEmail: ${email}\n\n${privacyChecked}\n${offersChecked}\n\nForm Factor: ${formFactor}`);
     document.getElementById('fname').value="";
     document.getElementById('lname').value="";
     document.getElementById('email').value="";
+    document.getElementById('privacy').checked = false;
+    document.getElementById('offers').checked = false;
+    if(formFactor === "PC"){
+        document.getElementById('pc').checked = false;
+    }else{
+        document.getElementById('mobile').checked = false;
+    }
 }
