@@ -48,6 +48,8 @@ p{
     color: #A6E1FA;
     font-family: monospace;
     font-size: 1.5em;
+    text-align: center;
+    line-height: 40px;
 }
 
 .main-body{
