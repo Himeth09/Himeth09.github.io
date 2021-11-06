@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="styles/default.css" rel="stylesheet" type="text/css">     
-        <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
-        <script src="lib/w3.js"></script>
-        <title>Humble Jeager Industries, ITIS 3135, Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/default.css" rel="stylesheet" type="text/css">     
+    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
+    <script src="lib/w3.js"></script>
+    <script src="scripts/contact.js"></script>
+    <title>Humble Jeager Industries, ITIS 3135, Contact</title>
 </head>
 <body>
     <div class="header" w3-include-html="components/header.html"></div>
@@ -24,7 +25,7 @@
                 <input type="email" id="email" name="email" size="50" placeholder="example@example.com" required><br><br>
                 <!-- checkboxes -->
                 <label for="privacy">Agree to our privacy policy</label>
-                <input type="checkbox" id="privacy" name="privacy" required><br>
+                <input type="checkbox" id="privacy" name="privacy"><br>
                 <label for="offers">Recieve notices of special offers and deals</label>
                 <input type="checkbox" id="offers" name="offers"><br><br>
                 <!-- radio buttons -->
@@ -37,7 +38,7 @@
                 </fieldset><br>
                 <!-- submit button -->
                 <label for="enter"></label>
-                <input type="submit" id="enter" class="button" value="Submit">
+                <button id="enter"  id="submit" onclick="display()">Submit</button>
             </form>
         </div>
     </main>
