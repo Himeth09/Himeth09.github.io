@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles/default.css" rel="stylesheet" type="text/css">     
-    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
-    <script src="lib/w3.js"></script>
-    <script src="scripts/contact.js"></script>
-    <title>Humble Jeager Industries, ITIS 3135, Contact</title>
-</head>
-<body>
-    <div class="header" w3-include-html="components/header.html"></div>
-    <div class="navigation" w3-include-html="components/nav.html"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles/default.css" rel="stylesheet" type="text/css">     
+        <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
+        <script src="lib/w3.js"></script>
+        <script src="scripts/contact.js"></script>
+        <title>Humble Jeager Industries, ITIS 3135, Contact</title>
+    </head>
+    
+    <body>
+        <div class="header" w3-include-html="components/header.html"></div>
+        <div class="navigation" w3-include-html="components/nav.html"></div>
 
-    <main>
-        <div class="main-body">
-            <h2>Contact Page</h2>
-            <form action="#">
-                <!-- textboxes -->
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="fname" size="50" minlength="2" required><br><br>
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lname" size="50" minlength="2" required><br><br>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" size="50" placeholder="example@example.com" required><br><br>
-                <!-- checkboxes -->
-                <label for="privacy">Agree to our privacy policy</label>
-                <input type="checkbox" id="privacy" name="privacy"><br>
-                <label for="offers">Recieve notices of special offers and deals</label>
-                <input type="checkbox" id="offers" name="offers"><br><br>
-                <!-- radio buttons -->
-                <fieldset>
-                    <legend>Will your site be focuse more for mobile or PC?</legend>
-                    <label for="pc">PC</label>
-                <input type="radio" id="pc" name="form_factor" value="PC">
-                <label for="mobile">Mobile</label>
-                <input type="radio" id="mobile" name="form_factor" value="MOBILE">
-                </fieldset><br>
-                <!-- submit button -->
-                <label for="enter"></label>
-                <button id="enter"  id="submit" onclick="display()">Submit</button>
-            </form>
-        </div>
-    </main>
+        <main>
+            <div class="main-body">
+                <h2>Contact Page</h2>
+                <form action="#">
+                    <!-- textboxes -->
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" size="50" minlength="2" required><br><br>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" size="50" minlength="2" required><br><br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" size="50" placeholder="example@example.com" required><br><br>
+                    <!-- checkboxes -->
+                    <label for="privacy">Agree to our privacy policy</label>
+                    <input type="checkbox" id="privacy" name="privacy"><br>
+                    <label for="offers">Recieve notices of special offers and deals</label>
+                    <input type="checkbox" id="offers" name="offers"><br><br>
+                    <!-- radio buttons -->
+                    <fieldset>
+                        <legend>Will your site be focuse more for mobile or PC?</legend>
+                        <label for="pc">PC</label>
+                    <input type="radio" id="pc" name="form_factor" value="PC">
+                    <label for="mobile">Mobile</label>
+                    <input type="radio" id="mobile" name="form_factor" value="MOBILE">
+                    </fieldset><br>
+                    <!-- submit button -->
+                    <label for="enter"></label>
+                    <button id="submit" onclick="display()">Submit</button>
+                </form>
+            </div>
+        </main>
 
-    <footer w3-include-html="components/footer.html"></footer>
-    <script>
-        w3.includeHTML();
-    </script>
-</body>
+        <footer w3-include-html="components/footer.html"></footer>
+        <script>
+            w3.includeHTML();
+        </script>
+    </body>
 </html>
