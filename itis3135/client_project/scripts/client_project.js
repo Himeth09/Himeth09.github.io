@@ -9,5 +9,5 @@ $(document).ready(function() {
             let swappedImage = new Image();
             swappedImage.src = $(this).children().attr('src');
         });
-    })
+    });
 });

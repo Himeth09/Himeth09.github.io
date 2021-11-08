@@ -27,7 +27,7 @@ window.onload = function() {
 	};
 
 	// display order and total
-	document.getElementById("order").innerHTML = order;
+	$("order").innerHTML = order;
 	
 		
 }; // end onload
