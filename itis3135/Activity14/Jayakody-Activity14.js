@@ -23,10 +23,10 @@ function getJSON(filepath) {
             $.each(data, function() {
                 $.each(this, function(key, value) {
                     $("main").append(
-                        "<h3>" + value.name + "</h3>" +
                         "<h1>" + value.title + "</h1>" +
-                        "<h2>" + value.bio + "</h2>" +
-                        "<img src=" + value.image + " alt=" + this.title + "_picture>" +
+                        "<h2>" + value.month + "</h2>" +
+                        "<h3>" + value.speaker + "</h3>" +
+                        "<img src=" + value.image + " alt=" + value.title + "_picture>" +
                         "<p>" + value.text + "</p>"
                     );
                 });
