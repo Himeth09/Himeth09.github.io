@@ -61,60 +61,9 @@ a:hover{
     font-size: 12px;
 }
 
-.bx-wrapper {
-    margin: 0 auto;
-}
-
-#id_pager {
-	text-align: center;
-	font-size: 90%;
-}
-
 #main-body {
     display: flex;
     flex-direction: row;
-    width: 100%;
-}
-
-#portrait {
-    width: 50%;
-    margin: 0 10px;
-    overflow: hidden;
-}
-
-#portrait img {
-    width: 30em;
-    height: auto;
-}
-
-#introduction {
-    width: 50%;
-    text-align: left;
-    margin: 0 10px;
-    overflow: hidden;
-    margin: 150px 0 0 0;
-}
-
-#socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items:center;
-    overflow: hidden;
-    margin: 50px 0 0 0;
-}
-
-#socials a img {
-    width: 3em;
-    height: auto;
-    margin: 0 20px;
-}
-
-.form-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
 }
 
@@ -137,19 +86,6 @@ button{
 label{
     font-family: 'Roboto Mono', monospace;
     font-weight: bold;
-}
-
-input{
-    background-color: #FC7753;
-    color: #E3E3E3;
-    font-size: 24px;
-    font-family: monospace;
-}
-
-::placeholder{
-    color: #403D58;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 20px;
 }
 
 .selection {
@@ -184,43 +120,4 @@ input{
     justify-content: flex-start;
     align-items: center;
     width: 70%;
-}
-
-/* Taken from w3schools' Responsive Image Grid: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
-.gallery-row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 5px;
-    justify-content: center;
-}
-
-.gallery-column {
-    flex: 25%;
-    max-width: 23%;
-    margin: 0 5px;
-}
-
-.gallery-column img {
-    margin: 5px 0 0 0;
-    vertical-align: middle;
-    width: 100%;
-}
-  
-@media screen and (max-width: 1000px) {
-    .gallery-column {
-        flex: 50%;
-        max-width: 40%;
-    }
-
-    .order-column {
-        flex: 100%;
-        max-width: 100%;
-    }
-}
-  
-@media screen and (max-width: 600px) {
-    .gallery-column {
-        flex: 100%;
-        max-width: 100%;
-    }
 }

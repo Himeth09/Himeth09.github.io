@@ -1,0 +1,107 @@
+body{
+    background-color:#403D58;
+}
+
+main, #header, #footer{
+    background-color:#f0f0f0;
+    text-align: center;
+}
+
+main {
+    max-width: 2000px;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 20px;
+    padding: 30px 0;
+}
+#header{
+    padding: 10px 30px 10px 30px;
+    color: #403D58;
+}
+
+#footer{
+    margin: 20px 0;
+    padding: 10px 30px 10px 30px;
+}
+
+#navigation{
+    background-color: #FC7753;
+    color: #f0f0f0;
+    margin: 0 0 20px 0;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+li{
+    padding: 10px 30px;
+}
+
+a{
+    color: #f0f0f0;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+a:hover{
+    color:#403D58;
+    font-size: 25px;
+}
+
+#built-by{
+    font-style: italic;
+    font-size: 12px;
+}
+
+#main-body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* Taken from w3schools' Responsive Image Grid: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5px;
+    justify-content: center;
+}
+
+.gallery-column {
+    flex: 25%;
+    max-width: 23%;
+    margin: 0 5px;
+}
+
+.gallery-column img {
+    margin: 5px 0 0 0;
+    vertical-align: middle;
+    width: 100%;
+}
+  
+@media screen and (max-width: 1000px) {
+    .gallery-column {
+        flex: 50%;
+        max-width: 40%;
+    }
+
+    .order-column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .gallery-column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
