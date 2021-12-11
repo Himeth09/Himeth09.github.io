@@ -88,30 +88,17 @@ label{
     font-weight: bold;
 }
 
-.selection {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+#selection {
+    display: grid;
     width: 50%;
+    grid-template-columns: 300px 300px 300px;
+    column-gap: 10px;
+    overflow: hidden;
 }
 
-.order-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 25%;
-    max-width: 23%;
-    padding: 0 4px;
-    margin: 0 10px;
-}
-
-.order-column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
+.grid-item img{
+    width: 300px;
+    height: auto;
 }
 
 #order-form {
@@ -119,5 +106,5 @@ label{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 70%;
+    width: 50%;
 }
