@@ -92,8 +92,9 @@ label{
     display: grid;
     width: 50%;
     grid-template-columns: 300px 300px 300px;
-    column-gap: 10px;
+    column-gap: 5px;
     overflow: hidden;
+    margin: 0 30px;
 }
 
 .grid-item img{
