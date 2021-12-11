@@ -13,7 +13,6 @@ $(document).ready(function() {
         },
         dataType: "json",
         success: function(data) {
-            // $(tabsSelector).html("");
             $.each(data, function() {
                 $.each(this, function(key, value) {
                     let tabsSelector = "#tabs-"+counter;
