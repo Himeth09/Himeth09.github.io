@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
     <script src="jquery-3.6.0.js" type="text/javascript"></script>
     <script src="scripts/client_project.js"></script>
+    <script src="scripts/commissions.js"></script>
     <title>Commissions, Samarakoon Photography</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
 
     <main>
         <div class="form-body">
-            <form action="#">
+            <form id="commissionsForm" action="#">
                 <h2>Want me to take some pictures for you? Send a request here!</h2>
                 <!-- textboxes -->
                 <label for="fname">First Name</label>
@@ -28,7 +29,7 @@
                 <label for="phone">Phone #</label>
                 <input type="tel" id="phone" name="phone" size="50" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
                 <!-- submit button -->
-                <button id="submit" onclick="display()">Submit</button>
+                <button id="submit" onclick="sendMessage()">Submit</button>
             </form>
         </div>
     </main>
