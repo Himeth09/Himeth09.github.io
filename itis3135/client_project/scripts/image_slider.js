@@ -8,6 +8,6 @@ $(document).ready(function() {
         slideMargin: 20,
         speed: 3000,
         pager: true,
-        pagerType: 'short'
+        pagerType: 'full'
     });
 });
